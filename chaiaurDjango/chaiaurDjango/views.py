@@ -6,8 +6,8 @@ def home(request):
     return render(request, 'website/index.html')
 
 def about(request):
-    return HttpResponse("Hello World, From Zavyar At About Page")
+    return render(request, 'website/about.html')
 
 def contact(request):
-    return HttpResponse("Hello World, From Zavyar At Contact Page")
+    return render(request, 'website/contact.html')
 

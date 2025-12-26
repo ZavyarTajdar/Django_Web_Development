@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <section class="contact">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2>Contact Me</h2>
+      <p>
+        Let’s connect and build something reliable, scalable,
+        and thoughtfully engineered.
+      </p>
+    </div>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" required />
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required />
+        <label>Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <textarea rows="5" required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
