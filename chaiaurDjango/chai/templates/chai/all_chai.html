@@ -2,4 +2,12 @@
 {% block title %}Chai {% endblock %}
 {% block content %}
 <h1 style="color: magenta;">All Chai Items</h1>
+<div class="grid grid-cols-3 gap-4 m-4">
+    {% for chai in chais %}
+        <div class="bg-gray-600 p-5">
+            <h2>{{ chai.name }}</h2>
+            <img class="rounded" src="{{ chai.image.url }}" alt"" />
+            
+        </div>
+    {% endfor %}
 {% endblock %}
